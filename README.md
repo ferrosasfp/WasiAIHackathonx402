@@ -13,9 +13,10 @@ WasiAI is a decentralized marketplace where AI developers monetize their models 
 | Feature | Description |
 |---------|-------------|
 | **x402 Micropayments** | Pay-per-use AI inference with USDC. No subscriptions. |
-| **Gasless Transactions** | Ultravioleta DAO facilitator covers network fees |
-| **On-chain Reputation** | ERC-8004 verifiable feedback system |
+| **Gasless Transactions** | Thirdweb facilitator covers network fees |
+| **On-chain Reputation (ERC-8004)** | Verifiable feedback system with on-chain attestations |
 | **NFT Licenses** | Perpetual licenses as tradeable NFT assets |
+| **Social Login** | Email/Google/Apple sign-in via Thirdweb In-App Wallets |
 | **Revenue Splitting** | Automatic royalty distribution via splitter contracts |
 
 ---
@@ -44,8 +45,14 @@ WasiAI is a decentralized marketplace where AI developers monetize their models 
           ▼                   ▼                   ▼
 ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
 │   Neon Postgres │  │  x402 Facilitator│  │  Avalanche Fuji │
-│   (Indexer DB)  │  │  (Ultravioleta)  │  │  Smart Contracts│
+│   (Indexer DB)  │  │   (Thirdweb)     │  │  Smart Contracts│
 └─────────────────┘  └─────────────────┘  └─────────────────┘
+                                                    │
+                                          ┌─────────┴─────────┐
+                                          │   ERC-8004        │
+                                          │   Reputation      │
+                                          │   Registry        │
+                                          └───────────────────┘
 ```
 
 ---
@@ -153,8 +160,7 @@ View earnings, usage analytics, and purchased licenses at `/dashboard`.
 | **Agent Registry** | `0x3421c2cDE342afF48C12Fe345eD81cA1ac4D89A6` |
 | **Splitter Factory** | `0xf8d8C220181CAe9A748b8e817BFE337AB5b74731` |
 | **Reputation (ERC-8004)** | `0xf4D4c4b91BaE8863f508B772f0195b7D3Fbc6412` |
-| **MockUSDC** | `0xCDa6E1C8340550aC412Ee9BC59ae4Db46745C53e` |
-| **Circle USDC (x402)** | `0x5425890298aed601595a70AB815c96711a31Bc65` |
+| **USDC (x402 Payments)** | `0x5425890298aed601595a70AB815c96711a31Bc65` |
 
 ---
 
@@ -248,10 +254,11 @@ curl -X POST http://localhost:3000/api/inference/1 \
 ## 🏆 Hackathon Highlights
 
 1. **Real x402 Integration**: Not a mock - actual micropayments on Avalanche Fuji
-2. **Gasless UX**: Ultravioleta facilitator covers all gas fees
-3. **Full E2E Flow**: Publish → Pay → Inference → Feedback
-4. **On-chain Reputation**: ERC-8004 implementation for verifiable AI quality
-5. **Revenue Splitting**: Automatic royalty distribution to model creators
+2. **Gasless UX**: Thirdweb facilitator covers all gas fees
+3. **Social Login**: Email/Google/Apple sign-in via Thirdweb In-App Wallets
+4. **Full E2E Flow**: Publish → Pay → Inference → Feedback
+5. **On-chain Reputation (ERC-8004)**: Verifiable AI quality attestations
+6. **Revenue Splitting**: Automatic royalty distribution to model creators
 
 ---
 
