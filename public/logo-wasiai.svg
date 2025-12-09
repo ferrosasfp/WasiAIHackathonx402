@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" fill="none">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="50%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- House shape with rounded corners -->
+  <path d="M40 8 L12 28 L12 68 C12 71.3 14.7 74 18 74 L62 74 C65.3 74 68 71.3 68 68 L68 28 L40 8 Z" 
+        stroke="url(#logoGradient)" 
+        stroke-width="5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none"/>
+  
+  <!-- Network nodes inside house -->
+  <!-- Center node -->
+  <circle cx="40" cy="48" r="6" fill="url(#logoGradient)"/>
+  
+  <!-- Top left node -->
+  <circle cx="26" cy="36" r="5" fill="url(#logoGradient)"/>
+  
+  <!-- Bottom left node -->
+  <circle cx="28" cy="62" r="4" fill="url(#logoGradient)"/>
+  
+  <!-- Right node -->
+  <circle cx="54" cy="52" r="5" fill="url(#logoGradient)"/>
+  
+  <!-- Connection lines -->
+  <line x1="40" y1="48" x2="26" y2="36" stroke="url(#logoGradient)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="40" y1="48" x2="28" y2="62" stroke="url(#logoGradient)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="40" y1="48" x2="54" y2="52" stroke="url(#logoGradient)" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Text: WasiAI -->
+  <text x="85" y="55" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="36" font-weight="700">
+    <tspan fill="url(#textGradient)">Wasi</tspan><tspan fill="#6366f1">AI</tspan>
+  </text>
+</svg>
