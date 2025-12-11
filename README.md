@@ -187,8 +187,8 @@ WasiAI is a decentralized marketplace where AI developers monetize their models 
 ┌─────────────────────────────────────────────────────────────────────────────────┐
 │  REVENUE DISTRIBUTION (ModelSplitter)                                            │
 │                                                                                  │
-│  User pays 0.05 USDC ──► ModelSplitter ──┬──► Creator: 0.04875 USDC (97.5%)     │
-│                                          └──► Platform: 0.00125 USDC (2.5%)     │
+│  User pays 0.05 USDC ──► ModelSplitter ──┬──► Creator: 0.04 USDC (80%)     │
+│                                          └──► Platform: 0.01 USDC (20%)     │
 └─────────────────────────────────────────────────────────────────────────────────┘
 ```
 
